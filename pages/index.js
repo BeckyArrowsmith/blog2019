@@ -1,5 +1,9 @@
-function Home() {
-    return <div>Hello, world!</div>
-}
+import BlogListing from '../components/BlogListing';
 
-export default Home
+export default function Index() {
+    return (
+        <div>
+            <BlogListing />
+        </div>
+    );
+}
