@@ -14,7 +14,6 @@ describe('getcontent.js functions correctly', function () {
     it('should have the kinda data we want', function() {
         fs.readFile("./data/contentful-data.json", (err, data) => {
           if (err) throw err;
-        //   console.log(data.toString());
           chaiAssert.include(data.toString(), '[{"sys":{', 'contentful-data.json contains sys object');
         });
     })
