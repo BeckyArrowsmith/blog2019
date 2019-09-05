@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Header renders without crashing 1`] = `
+<header>
+  <a
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={
+      Object {
+        "marginRight": 15,
+      }
+    }
+  >
+    Home
+  </a>
+  <a
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={
+      Object {
+        "marginRight": 15,
+      }
+    }
+  >
+    About
+  </a>
+</header>
+`;

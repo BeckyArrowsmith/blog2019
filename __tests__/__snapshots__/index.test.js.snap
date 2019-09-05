@@ -1,7 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With Snapshot Testing App shows "Hello world!" 1`] = `
+exports[`With Snapshot Testing App is rendered is rendered 1`] = `
 <div>
-  Hello, world!
+  <div>
+    <article
+      id="another-post"
+    >
+      <h2>
+        <a
+          href="another-post"
+        >
+          Another post
+        </a>
+      </h2>
+      <p>
+        Created at: 
+        2019-09-02T15:44:40.520Z
+      </p>
+      <p>
+        Updated at: 
+        2019-09-03T17:45:09.743Z
+      </p>
+      <p>
+        Another posts content
+      </p>
+      <section
+        id="tags"
+      >
+        <h3>
+          Tags:
+        </h3>
+        <ul>
+          <li>
+            <a
+              href="JavaScript"
+            >
+              JavaScript
+            </a>
+          </li>
+          <li>
+            <a
+              href="Testing"
+            >
+              Testing
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+    <article
+      id="writing-unittests-with-jest-in-nextjs"
+    >
+      <h2>
+        <a
+          href="writing-unittests-with-jest-in-nextjs"
+        >
+          Writing unittests with Jest in Next.js
+        </a>
+      </h2>
+      <p>
+        Created at: 
+        2019-07-30T20:08:58.693Z
+      </p>
+      <p>
+        Updated at: 
+        2019-07-31T20:39:42.280Z
+      </p>
+      <p>
+        Content
+      </p>
+      <section
+        id="tags"
+      >
+        <h3>
+          Tags:
+        </h3>
+        <ul>
+          <li>
+            <a
+              href="Testing"
+            >
+              Testing
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </div>
 </div>
 `;

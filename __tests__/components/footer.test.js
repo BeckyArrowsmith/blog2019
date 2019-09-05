@@ -4,17 +4,18 @@ import { shallow } from 'enzyme'
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import App from '../pages/index.js'
+import App from '../../pages/index.js'
+import Footer from '../../components/Footer.js'
 
 describe('With Enzyme', () => {
-    it('App renders without crashing', () => {
-      shallow(<App />);
+    it('Footer renders without crashing', () => {
+      shallow(<Footer />);
     });
 })
 
 describe('With Snapshot Testing', () => {
-    it('App is rendered is rendered', () => {
-        const component = renderer.create(<App />)
+    it('Footer renders without crashing', () => {
+        const component = renderer.create(<Footer />)
         const tree = component.toJSON()
         expect(tree).toMatchSnapshot()
     })
