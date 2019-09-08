@@ -2,6 +2,35 @@
 
 exports[`With Snapshot Testing App is rendered is rendered 1`] = `
 <div>
+  <header>
+    <h1>
+      becky.codes
+    </h1>
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    >
+      Home
+    </a>
+    <a
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    >
+      About
+    </a>
+  </header>
   <div>
     <article
       id="another-post"
@@ -87,5 +116,31 @@ exports[`With Snapshot Testing App is rendered is rendered 1`] = `
       </section>
     </article>
   </div>
+  <footer>
+    <a
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    >
+      About
+    </a>
+    <a
+      href="http://github.com/BeckyArrowsmith"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    >
+      GitHub
+    </a>
+  </footer>
 </div>
 `;
