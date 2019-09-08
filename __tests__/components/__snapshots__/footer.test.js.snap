@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing App is rendered is rendered 1`] = `
+<footer>
+  <a
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={
+      Object {
+        "marginRight": 15,
+      }
+    }
+  >
+    About
+  </a>
+  <a
+    href="http://github.com/BeckyArrowsmith"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={
+      Object {
+        "marginRight": 15,
+      }
+    }
+  >
+    GitHub
+  </a>
+</footer>
+`;
