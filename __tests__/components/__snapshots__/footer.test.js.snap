@@ -1,22 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`With Snapshot Testing App is rendered is rendered 1`] = `
-<header>
-  <h1>
-    becky.codes
-  </h1>
-  <a
-    href="/"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    style={
-      Object {
-        "marginRight": 15,
-      }
-    }
-  >
-    Home
-  </a>
+<footer>
   <a
     href="/about"
     onClick={[Function]}
@@ -29,5 +14,17 @@ exports[`With Snapshot Testing App is rendered is rendered 1`] = `
   >
     About
   </a>
-</header>
+  <a
+    href="http://github.com/BeckyArrowsmith"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={
+      Object {
+        "marginRight": 15,
+      }
+    }
+  >
+    GitHub
+  </a>
+</footer>
 `;

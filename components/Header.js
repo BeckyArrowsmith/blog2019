@@ -6,6 +6,8 @@ const linkStyle = {
 
 const Header = () => (
     <header>
+        <h1>becky.codes</h1>
+        
         <Link href="/">
             <a style={linkStyle}>Home</a>
         </Link>
