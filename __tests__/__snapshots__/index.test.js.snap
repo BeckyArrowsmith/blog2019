@@ -2,13 +2,39 @@
 
 exports[`With Snapshot Testing App is rendered is rendered 1`] = `
 <div>
+  <header>
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    >
+      Home
+    </a>
+    <a
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    >
+      About
+    </a>
+  </header>
   <div>
     <article
       id="another-post"
     >
       <h2>
         <a
-          href="another-post"
+          href="http://localhost:3000/post?slug=another-post"
         >
           Another post
         </a>
@@ -53,7 +79,7 @@ exports[`With Snapshot Testing App is rendered is rendered 1`] = `
     >
       <h2>
         <a
-          href="writing-unittests-with-jest-in-nextjs"
+          href="http://localhost:3000/post?slug=writing-unittests-with-jest-in-nextjs"
         >
           Writing unittests with Jest in Next.js
         </a>
@@ -87,5 +113,31 @@ exports[`With Snapshot Testing App is rendered is rendered 1`] = `
       </section>
     </article>
   </div>
+  <footer>
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    >
+      link
+    </a>
+    <a
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    >
+      link
+    </a>
+  </footer>
 </div>
 `;
