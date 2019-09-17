@@ -1,20 +1,21 @@
 /* eslint-env jest */
 
-import { shallow } from 'enzyme'
-import React from 'react'
+import * as React from 'react'
+import { mount } from 'enzyme'
 import renderer from 'react-test-renderer'
 
-import App from '../../pages/index.js'
 import Header from '../../components/Header.js'
 
+
 describe('With Enzyme', () => {
-    it('Header renders without crashing', () => {
-      shallow(<Header />);
-    });
+    it('Check Header has rendered H1', function () {
+        const wrap = mount(<Header />)
+        expect(wrap.find('header').text()).toContain('becky.codes')
+    })
 })
 
 describe('With Snapshot Testing', () => {
-    it('Header renders without crashing', () => {
+    it('App is rendered is rendered', () => {
         const component = renderer.create(<Header />)
         const tree = component.toJSON()
         expect(tree).toMatchSnapshot()

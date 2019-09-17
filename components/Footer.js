@@ -6,11 +6,11 @@ const linkStyle = {
 
 const Footer = () => (
     <footer>
-        <Link href="/">
-            <a style={linkStyle}>link</a>
-        </Link>
         <Link href="/about">
-            <a style={linkStyle}>link</a>
+            <a style={linkStyle}>About</a>
+        </Link>
+        <Link href="http://github.com/BeckyArrowsmith">
+            <a style={linkStyle}>GitHub</a>
         </Link>
     </footer>
 );

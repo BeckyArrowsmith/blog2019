@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With Snapshot Testing Header renders without crashing 1`] = `
+exports[`With Snapshot Testing App is rendered is rendered 1`] = `
 <header>
+  <h1>
+    becky.codes
+  </h1>
   <a
     href="/"
     onClick={[Function]}
