@@ -1,19 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With Snapshot Testing Footer renders without crashing 1`] = `
+exports[`With Snapshot Testing App is rendered is rendered 1`] = `
 <footer>
-  <a
-    href="/"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    style={
-      Object {
-        "marginRight": 15,
-      }
-    }
-  >
-    link
-  </a>
   <a
     href="/about"
     onClick={[Function]}
@@ -24,7 +12,19 @@ exports[`With Snapshot Testing Footer renders without crashing 1`] = `
       }
     }
   >
-    link
+    About
+  </a>
+  <a
+    href="http://github.com/BeckyArrowsmith"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={
+      Object {
+        "marginRight": 15,
+      }
+    }
+  >
+    GitHub
   </a>
 </footer>
 `;

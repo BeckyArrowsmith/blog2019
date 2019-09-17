@@ -2,7 +2,7 @@ import data from "../data/contentful-data.json";
 
 function BlogListing() {
     const postData = data.map((post) =>        
-        <article id={post.fields.slug}>
+        <article key={post.fields.slug} id={post.fields.slug}>
             <h2><a href={'http://localhost:3000/post?slug=' + post.fields.slug}>{post.fields.title}</a></h2>
             <p>Created at: {post.sys.createdAt}</p>
             <p>Updated at: {post.sys.updatedAt}</p>
