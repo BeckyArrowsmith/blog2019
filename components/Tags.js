@@ -1,8 +1,12 @@
 import data from "../data/contentful-data.json";
 
-function BlogListing() {
-    const postData = data.map((post) =>        
-        <article key={post.fields.slug} id={post.fields.slug}>
+import { useRouter } from 'next/router'
+
+const Post = () => {
+    const router = useRouter()
+
+    const postData = data.filter(post => post.fields.tags[0] === router.query.tag).map((post) =>
+        <article id={post.fields.slug}>
             <h2><a href={'http://localhost:3000/post?slug=' + post.fields.slug}>{post.fields.title}</a></h2>
             <p>Created at: {post.sys.createdAt}</p>
             <p>Updated at: {post.sys.updatedAt}</p>
@@ -17,12 +21,12 @@ function BlogListing() {
             </section>
         </article>
     );
-
     return (
-        <div>
+        <article>
+            <h1>Showing articles with tag: {router.query.tag}</h1>
             {postData}
-        </div>
-    );
+        </article>
+    )
 }
 
-export default BlogListing
+export default Post
