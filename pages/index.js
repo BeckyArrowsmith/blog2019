@@ -1,14 +1,10 @@
 import BlogListing from '../components/BlogListing';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Layout from "../components/Layout";
 
+const Index = () => (
+  <Layout>
+    <BlogListing />
+  </Layout>
+);
 
-export default function Index() {
-    return (
-        <div>
-            <Header />
-            <BlogListing />
-            <Footer />
-        </div>
-    );
-}
+export default Index;
