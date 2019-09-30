@@ -5,7 +5,7 @@ const linkStyle = {
 };
 
 const Header = () => (
-    <header>
+    <header className="Header">
         <h1>becky.codes</h1>
         
         <Link href="/">
@@ -14,6 +14,11 @@ const Header = () => (
         <Link href="/about">
             <a style={linkStyle}>About</a>
         </Link>
+
+        <style jsx>{`
+            background-color: red;
+            width: 100%;
+        `}</style>
     </header>
 );
 
