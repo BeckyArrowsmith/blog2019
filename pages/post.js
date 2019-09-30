@@ -1,14 +1,10 @@
 import BlogPost from '../components/BlogPost';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Layout from "../components/Layout";
 
+const Post = () => (
+  <Layout>
+    <BlogPost />
+  </Layout>
+);
 
-export default function Post() {
-    return (
-        <div>
-            <Header />
-            <BlogPost />
-            <Footer />
-        </div>
-    );
-}
+export default Post;

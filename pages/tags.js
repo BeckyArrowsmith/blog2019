@@ -1,14 +1,10 @@
-import Tags from '../components/Tags';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Tags from "../components/Tags";
+import Layout from "../components/Layout";
 
+const PostTags = () => (
+  <Layout>
+    <Tags />
+  </Layout>
+);
 
-export default function Post() {
-    return (
-        <div>
-            <Header />
-            <Tags />
-            <Footer />
-        </div>
-    );
-}
+export default PostTags;
