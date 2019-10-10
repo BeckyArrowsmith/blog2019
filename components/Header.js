@@ -1,19 +1,10 @@
-import Link from 'next/link';
-
-const linkStyle = {
-  marginRight: 15
-};
+import Nav from '../components/Nav';
 
 const Header = () => (
     <header className="Header">
         <h1>becky.codes</h1>
-        
-        <Link href="/">
-            <a style={linkStyle}>Home</a>
-        </Link>
-        <Link href="/about">
-            <a style={linkStyle}>About</a>
-        </Link>
+
+        <Nav />
 
         <style jsx>{`
             background-color: red;
