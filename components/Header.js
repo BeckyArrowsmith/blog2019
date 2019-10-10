@@ -6,10 +6,6 @@ const Header = () => (
 
         <Nav />
 
-        <style jsx>{`
-            background-color: red;
-            width: 100%;
-        `}</style>
     </header>
 );
 
