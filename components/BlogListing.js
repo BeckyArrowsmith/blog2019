@@ -12,7 +12,7 @@ function BlogListing() {
             <section id="tags">
                 <h3>Tags:</h3>
                 <ul>
-                    {post.fields.tags.map((tag) => <li><a href={'http://localhost:3000/tags?tag=' + tag}>{tag}</a></li>)}
+                    {post.fields.tags.map((tag) => <li key={post.id}><a href={'http://localhost:3000/tags?tag=' + tag}>{tag}</a></li>)}
                 </ul>
             </section>
         </article>
