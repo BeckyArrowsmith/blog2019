@@ -1,4 +1,20 @@
 header {
-    background-color: red;
-    width: 100%;
+    $bg-color: white;
+    $dot-color: black;
+
+    $dot-size: 1px;
+    $dot-space: 4px;
+
+	background:
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+    background-size: $dot-space $dot-space;
+
+    .container {
+        * {
+            background: #fff;
+            padding: 0 10px;
+        }
+    }
 }
