@@ -1,5 +1,5 @@
 import BlogListing from '../components/BlogListing';
-import Layout from "../components/Layout";
+import Layout from "../layouts/Layout";
 
 const Index = () => (
   <Layout>

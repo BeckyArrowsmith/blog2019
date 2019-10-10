@@ -1,5 +1,5 @@
 import BlogPost from '../components/BlogPost';
-import Layout from "../components/Layout";
+import Layout from "../layouts/Layout";
 
 const Post = () => (
   <Layout>
