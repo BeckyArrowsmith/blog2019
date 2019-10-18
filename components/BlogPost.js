@@ -22,7 +22,7 @@ const Post = () => {
         </article>
     );
     return (
-        <article>
+        <article class="container">
             {postData}
         </article>
     )

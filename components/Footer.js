@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const Footer = () => (
-    <footer>
+    <footer class="container">
         <Link href="/about">
             <a>About</a>
         </Link>
