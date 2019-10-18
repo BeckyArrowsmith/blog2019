@@ -4,10 +4,12 @@ const Header = () => (
     <header className="Header">
         <Nav />
 
-        <div class="container">
+        <div class="container bio">
             <h1>becky.codes</h1>
 
-            <p>Silly twat who likes computers but not writing blog posts tbh</p>
+            <p>This is my bio. It will be very concise and explain who I am in little words.</p>
+            <p>Maybe even on two lines.</p>
+            <p><a href="#">Twitter</a> <a href="#">Github</a></p>
         </div>
     </header>
 );

@@ -3,7 +3,7 @@ import Link from '../components/Link'
 const Nav = () => (
     <nav>
         <ul>
-            <li>
+            <li class="home">
                 <Link activeClassName='active' href='/'>
                     <a className='nav-link home-link'>Home</a>
                 </Link>

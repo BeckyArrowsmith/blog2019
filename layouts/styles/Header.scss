@@ -17,4 +17,15 @@ header {
             padding: 0 10px;
         }
     }
+
+    .bio {
+        h1, p {
+            padding-bottom: 10px;
+        }
+
+        a {
+            padding: 0;
+            color: #505050;
+        }
+    }
 }
