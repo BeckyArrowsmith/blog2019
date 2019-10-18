@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Roboto+Mono&display=swap');
+
+p {
+    font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}

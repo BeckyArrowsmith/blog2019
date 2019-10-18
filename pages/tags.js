@@ -1,5 +1,5 @@
 import Tags from "../components/Tags";
-import Layout from "../components/Layout";
+import Layout from "../layouts/Layout";
 
 const PostTags = () => (
   <Layout>

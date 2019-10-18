@@ -1,0 +1,22 @@
+header {
+	background:
+		linear-gradient(90deg, white (4px - 1px), transparent 1%) center,
+		linear-gradient(white (4px - 1px), transparent 1%) center,
+		black;
+    background-size: 4px 4px;
+}
+
+header .container * {
+    background: #fff;
+    padding: 0 10px;
+
+}
+
+header .bio h1, p {
+    padding-bottom: 10px;
+}
+
+header .bio a {
+    padding: 0;
+    color: #505050;
+}
