@@ -1,15 +1,14 @@
 header {
-	background:
-		linear-gradient(90deg, white (4px - 1px), transparent 1%) center,
-		linear-gradient(white (4px - 1px), transparent 1%) center,
-		black;
-    background-size: 4px 4px;
+  background-image: radial-gradient(#212121 10%, transparent 10%),
+      radial-gradient(#fafafa 10%, transparent 10%);
+  background-color: #fff;
+  background-position: 0 0, 10px 10px;
+  background-size: 5px 5px;
 }
 
 header .container * {
     background: #fff;
     padding: 0 10px;
-
 }
 
 header .bio h1, p {
