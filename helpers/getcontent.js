@@ -17,12 +17,4 @@ client.getEntries().then(function(entries) {
   fs.writeFile("./data/contentful-data.json", response, error => {
     if (error) throw error;
   });
-  // entries.items.forEach(function(entry) {
-  //   if (entry.fields) {
-  //     console.log(entry.fields.title);
-  //     console.log(entry.fields.slug);
-  //     console.log(entry.fields.tags);
-  //     console.log(entry.fields.content);
-  //   }
-  // });
 });
