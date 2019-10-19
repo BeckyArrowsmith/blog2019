@@ -8,7 +8,7 @@ function BlogListing() {
             <p>Created at: {post.sys.createdAt}</p>
             <p>Updated at: {post.sys.updatedAt}</p>
 
-            <p><Markdown>{post.fields.content}</Markdown></p>
+            <Markdown>{post.fields.content}</Markdown>
 
             <section id="tags">
                 <h3>Tags:</h3>
