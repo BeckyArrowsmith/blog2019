@@ -14,7 +14,9 @@ function BlogListing() {
                 <p>Created at: <time>{post.sys.createdAt}</time></p>
                 <p>Updated at: <time>{post.sys.updatedAt}</time></p>
 
-                <Markdown>{post.fields.content}</Markdown>
+                <Markdown>{post.fields.content.substring(0, 400) + "..."}</Markdown>
+
+                <a href={post.fields.slug}>Read more</a>
 
                 <section id="tags">
                     <h3>Tags:</h3>
