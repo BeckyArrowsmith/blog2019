@@ -1,0 +1,29 @@
+.headline-image {
+    background: #fcfcfc;
+}
+
+.headline-image img {
+    margin: 0 auto;
+}
+
+.post-content-markdown {
+    margin: 20px 0;
+}
+
+figure {
+    background: #f2f2f2;
+    padding: 20px 20px 10px 20px;
+}
+
+figure figcaption {
+    padding-top: 10px;
+    font-style: italic;
+}
+
+figure img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 20px 0 10px 0;
+}
