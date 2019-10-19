@@ -1,4 +1,5 @@
 import data from "../data/contentful-data.json";
+import Markdown from 'markdown-to-jsx';
 
 import { useRouter } from 'next/router'
 
@@ -11,7 +12,7 @@ const Post = () => {
             <p>Created at: {post.sys.createdAt}</p>
             <p>Updated at: {post.sys.updatedAt}</p>
 
-            <p>{post.fields.content}</p>
+            <p><Markdown>{post.fields.content}</Markdown></p>
 
             <section id="tags">
                 <h3>Tags:</h3>
