@@ -10,8 +10,9 @@ function BlogListing() {
 
             <section class="container">
                 <h2 ><a href={'http://localhost:3000/post?slug=' + post.fields.slug}>{post.fields.title}</a></h2>
-                <p>Created at: {post.sys.createdAt}</p>
-                <p>Updated at: {post.sys.updatedAt}</p>
+
+                <p>Created at: <time>{post.sys.createdAt}</time></p>
+                <p>Updated at: <time>{post.sys.updatedAt}</time></p>
 
                 <Markdown>{post.fields.content}</Markdown>
 
