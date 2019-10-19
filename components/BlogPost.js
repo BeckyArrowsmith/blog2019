@@ -16,7 +16,7 @@ const Post = () => {
                 <h2 ><a href={'http://localhost:3000/post?slug=' + post.fields.slug}>{post.fields.title}</a></h2>
                 <p>Created at: <time>{post.sys.createdAt}</time></p>
 
-                <Markdown>{post.fields.content}</Markdown>
+                <Markdown className="post-content-markdown">{post.fields.content}</Markdown>
 
                 <section id="tags">
                     <h3>Tags:</h3>

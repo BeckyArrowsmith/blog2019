@@ -12,8 +12,8 @@ function BlogListing() {
                 <h2 ><a href={'http://localhost:3000/post?slug=' + post.fields.slug}>{post.fields.title}</a></h2>
 
                 <p>Created at: <time>{post.sys.createdAt}</time></p>
-
-                <Markdown>{post.fields.content.substring(0, 400) + "..."}</Markdown>
+                
+                <Markdown className="post-content-markdown">{post.fields.content.substring(0, 400) + "..."}</Markdown>
 
                 <a href={post.fields.slug}>Read more</a>
 
