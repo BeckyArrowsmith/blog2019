@@ -5,7 +5,7 @@ const Nav = () => (
         <ul>
             <li class="home">
                 <Link activeClassName='active' href='/'>
-                    <a className='nav-link home-link'>Home</a>
+                    <a className='nav-link home-link'>becky.codes</a>
                 </Link>
             </li>
             <li>
