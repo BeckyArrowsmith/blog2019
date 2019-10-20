@@ -10,6 +10,14 @@ article h2 {
     padding: 0;
 }
 
+article h2 a {
+    color: #191E22;
+}
+
+article h2 a:hover {
+    color: #E00070;
+}
+
 #post-meta {
     height: 30px;
 }
@@ -17,10 +25,20 @@ article h2 {
 #post-meta #date-created {
     float:left;
     padding-right: 10px;
+    color: #E00070;
 }
 
 #post-meta #tags {
     float:left;
+    color: #464a4e;
+}
+
+#post-meta #tags ul li a {
+    color: #464a4e;
+}
+
+#post-meta #tags ul li a:hover {
+    color: #E00070;
 }
 
 .post-content-markdown {
@@ -47,9 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #read-more {
-    border: 3px solid #E00070;
     padding: 15px;
+    border: 3px solid;
 }
+
 
 #read-more:hover {
     color: #9E004F;
