@@ -17,5 +17,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color:#E00070
+    color:#E00070;
+}
+
+a:hover {
+    color: #9E004F;
 }

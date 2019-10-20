@@ -36,7 +36,7 @@ function BlogListing() {
             {post.fields.content.substring(0, 400) + "..."}
           </Markdown>
 
-          <a href={post.fields.slug}>Read more</a>
+          <a id="read-more" href={post.fields.slug}>Read more</a>
         </section>
       </article>
     ));

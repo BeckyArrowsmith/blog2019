@@ -15,7 +15,7 @@ const Layout = props => (
 
     <Header />
 
-    <div className="Content">{props.children}</div>
+    <div>{props.children}</div>
 
     <Footer />
 
