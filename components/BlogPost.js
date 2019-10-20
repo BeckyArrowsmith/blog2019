@@ -37,13 +37,6 @@ const Post = () => {
                 <h2 ><a href={'http://localhost:3000/post?slug=' + post.fields.slug}>{post.fields.title}</a></h2>
 
                 <Markdown className="post-content-markdown">{post.fields.content}</Markdown>
-
-                <section id="tags">
-                    <h3>Tags:</h3>
-                    <ul>
-                        {post.fields.tags.map((tag) => <li><a href={'http://localhost:3000/tags?tag=' + tag}>{tag}</a></li>)}
-                    </ul>
-                </section>
             </section>
         </article>
     );
