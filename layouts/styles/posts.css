@@ -6,6 +6,23 @@
     margin: 0 auto;
 }
 
+article h2 {
+    padding: 0;
+}
+
+#post-meta {
+    height: 30px;
+}
+
+#post-meta #date-created {
+    float:left;
+    padding-right: 10px;
+}
+
+#post-meta #tags {
+    float:left;
+}
+
 .post-content-markdown {
     margin: 20px 0;
 }
