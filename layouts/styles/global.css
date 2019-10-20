@@ -2,6 +2,9 @@
 
 html {
     font-family: 'Karla', sans-serif;
+    background: #fdfdfd;
+    font-size: 18px;
+    color: #191E22;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,4 +15,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px 20px;
     max-width: 800px;
     margin: 0 auto;
+}
+
+a {
+    color:#E00070;
+}
+
+a:hover {
+    color: #9E004F;
 }
