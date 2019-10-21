@@ -27,7 +27,7 @@ const Post = () => {
                             <li><em>Tags:</em></li>
                             {post.fields.tags.map(tag => (
                             <li>
-                                <em><a href={process.env.BASE_URL + "/tags?tag=" + tag}>{tag}</a></em>
+                                <em><a href={"/tags?tag=" + tag}>{tag}</a></em>
                             </li>
                             ))}
                         </ul>
