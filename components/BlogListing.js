@@ -20,7 +20,7 @@ function BlogListing() {
                             
                             {post.fields.tags.map(tag => (
                             <li>
-                                <em><a href={process.env.BASE_URL + "/tags?tag=" + tag}>{tag}</a></em>
+                                <em><a href={"/tags?tag=" + tag}>{tag}</a></em>
                             </li>
                             ))}
                         </ul>
@@ -28,7 +28,7 @@ function BlogListing() {
                 </section>
 
                 <h1>
-                    <a href={process.env.BASE_URL + "/post?slug=" + post.fields.slug}>
+                    <a href={"/post?slug=" + post.fields.slug}>
                         {post.fields.title}
                     </a>
                 </h1>
@@ -37,7 +37,7 @@ function BlogListing() {
                     {post.fields.content.substring(0, 400) + "..."}
                 </Markdown>
 
-                <a id="read-more" href={process.env.BASE_URL + "/post?slug=" + post.fields.slug}>Read more</a>
+                <a id="read-more" href={"/post?slug=" + post.fields.slug}>Read more</a>
             </section>
         </article>
     ));
