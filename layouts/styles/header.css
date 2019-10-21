@@ -1,9 +1,9 @@
 header {
-  background-image: radial-gradient(#212121 10%, transparent 10%),
-      radial-gradient(#fafafa 10%, transparent 10%);
-  background-color: #fff;
-  background-position: 0 0, 10px 10px;
-  background-size: 5px 5px;
+    background-image: radial-gradient(#212121 10%, transparent 10%),
+        radial-gradient(#fafafa 10%, transparent 10%);
+    background-color: #fff;
+    background-position: 0 0, 10px 10px;
+    background-size: 5px 5px;
 }
 
 header .container * {

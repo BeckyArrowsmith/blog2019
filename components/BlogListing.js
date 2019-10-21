@@ -39,6 +39,8 @@ function BlogListing() {
 
                 <a id="read-more" href={"/post?slug=" + post.fields.slug}>Read more</a>
             </section>
+
+            <hr/>
         </article>
     ));
 
