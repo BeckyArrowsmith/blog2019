@@ -8,7 +8,7 @@ function BlogListing() {
 
     const postData = data.map(post => (
         <article key={post.id} id={post.fields.slug}>
-            <section class="container">
+            <section className="container">
                 <section id="post-meta">
                     <span id="date-created">
                         <time><strong>{dateFormat(post.sys.createdAt)}</strong></time>

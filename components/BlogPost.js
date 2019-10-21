@@ -12,11 +12,11 @@ const Post = () => {
 
     const postData = data.filter(post => post.fields.slug === router.query.slug).map((post) =>
         <article key={post.id} id={post.fields.slug}>
-            <section class="headline-image">
+            <section className="headline-image">
                 <img src={post.fields.headlineImage.fields.file.url} alt={post.fields.headlineImage.fields.description} />
             </section>
             
-            <section class="container">
+            <section className="container">
                 <section id="post-meta">
                     <span id="date-created">
                         <time><strong>{dateFormat(post.sys.createdAt)}</strong></time>
