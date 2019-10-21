@@ -1,0 +1,7 @@
+footer a {
+    padding-left: 20px;
+}
+
+footer a:first-child {
+    padding-left: 0
+}
