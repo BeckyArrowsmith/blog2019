@@ -91,3 +91,14 @@ h1, h2, h3, h4, h5, h6 {
 #read-more:hover {
     color: #E00070;
 }
+
+article hr {
+    border: 0;
+    height: 2px;
+    background: #FF00D6;
+    background: linear-gradient(-45deg, #FF00D6 0%,#5a90e1 25%,#FF00D6 50%,#5a90e1 75%,#FF00D6 100%);
+}
+
+/* article hr:last-child {
+    display: none;
+} */
