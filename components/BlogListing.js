@@ -1,5 +1,5 @@
 import data from "../data/contentful-data.json";
-import Markdown from 'markdown-to-jsx';
+import Markdown from "markdown-to-jsx";
 
 function BlogListing() {    
     function dateFormat(date) {
