@@ -11,7 +11,7 @@ const Footer = () => (
             </Link>
 
             <Link href="https://github.com/BeckyArrowsmith/blog2019">
-                <a>Website repo</a>
+                <a>Repository</a>
             </Link>
 
             <Link href="/pgp.txt">
