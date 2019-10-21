@@ -34,7 +34,7 @@ const Post = () => {
                     </section>
                 </section>
                 
-                <h2 >{post.fields.title}</h2>
+                <h1>{post.fields.title}</h1>
 
                 <Markdown className="post-content-markdown">{post.fields.content}</Markdown>
             </section>

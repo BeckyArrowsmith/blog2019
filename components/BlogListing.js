@@ -27,11 +27,11 @@ function BlogListing() {
                     </section>
                 </section>
 
-                <h2>
+                <h1>
                     <a href={process.env.BASE_URL + "/post?slug=" + post.fields.slug}>
                         {post.fields.title}
                     </a>
-                </h2>
+                </h1>
 
                 <Markdown className="post-content-markdown">
                     {post.fields.content.substring(0, 400) + "..."}
