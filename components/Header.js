@@ -4,7 +4,7 @@ const Header = () => (
     <header className="Header">
         <Nav />
 
-        <div class="container bio">
+        <div className="container bio">
             <h1>becky.codes</h1>
 
             <p>This is my bio. It will be very concise and explain who I am in little words.</p>

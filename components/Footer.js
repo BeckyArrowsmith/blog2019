@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => (
     <footer>
-        <div class="container">
+        <div className="container">
             <Link href="/about">
                 <a>About</a>
             </Link>
