@@ -1,7 +1,7 @@
 import data from "../data/contentful-data.json";
-import Markdown from 'markdown-to-jsx';
+import Markdown from "markdown-to-jsx";
 
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router"
 
 const Post = () => {
     const router = useRouter()
