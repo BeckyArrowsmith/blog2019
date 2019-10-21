@@ -4,21 +4,21 @@ const Footer = () => (
     <footer>
         <div class="container">
             <Link href="/about">
-                About
+                <a>About</a>
             </Link>
             <Link href="http://github.com/BeckyArrowsmith">
-                GitHub
+                <a>GitHub</a>
             </Link>
 
             <Link href="https://github.com/BeckyArrowsmith/blog2019">
-                Website repo
+                <a>Website repo</a>
             </Link>
 
             <Link href="/pgp.txt">
-                PGP key
+                <a>PGP key</a>
             </Link>
 
-            <p>&copy; Becky Arrowsmith {new Date().getFullYear()}</p>
+            <p>&copy; Becky Arrowsmith {new Date().getFullYear()} &#128029;</p>
         </div>
     </footer>
 );
