@@ -27,14 +27,14 @@ const Post = () => {
                             <li><em>Tags:</em></li>
                             {post.fields.tags.map(tag => (
                             <li>
-                                <em><a href={"http://localhost:3000/tags?tag=" + tag}>{tag}</a></em>
+                                <em><a href={process.env.BASE_URL + "/tags?tag=" + tag}>{tag}</a></em>
                             </li>
                             ))}
                         </ul>
                     </section>
                 </section>
                 
-                <h2 ><a href={'http://localhost:3000/post?slug=' + post.fields.slug}>{post.fields.title}</a></h2>
+                <h2 >{post.fields.title}</h2>
 
                 <Markdown className="post-content-markdown">{post.fields.content}</Markdown>
             </section>
