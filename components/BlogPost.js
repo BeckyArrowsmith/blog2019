@@ -1,7 +1,7 @@
 import data from "../data/contentful-data.json";
-import Markdown from "markdown-to-jsx";
+import Markdown from 'markdown-to-jsx';
 
-import { useRouter } from "next/router"
+import { useRouter } from 'next/router'
 
 const Post = () => {
     const router = useRouter()
@@ -12,14 +12,14 @@ const Post = () => {
 
     const postData = data.filter(post => post.fields.slug === router.query.slug).map((post) =>
         <article key={post.id} id={post.fields.slug}>
-            <section className="headline-image">
+            <section class="headline-image">
                 <img src={post.fields.headlineImage.fields.file.url} alt={post.fields.headlineImage.fields.description} />
             </section>
             
-            <section className="container">
+            <section class="container">
                 <section id="post-meta">
                     <span id="date-created">
-                        <time><strong>{dateFormat(post.sys.createdAt)}</strong></time>
+                        <time><strong>{dateFormat(post.fields.datePublished)}</strong></time>
                     </span>
 
                     <section id="tags">

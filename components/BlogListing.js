@@ -11,7 +11,7 @@ function BlogListing() {
             <section className="container">
                 <section id="post-meta">
                     <span id="date-created">
-                        <time><strong>{dateFormat(post.sys.createdAt)}</strong></time>
+                        <time><strong>{dateFormat(post.fields.datePublished)}</strong></time>
                     </span>
 
                     <section id="tags">
