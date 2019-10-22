@@ -10,7 +10,7 @@ const Post = () => {
       return new Date(date).toLocaleDateString();
     }
 
-    const postData = data.filter(post => post.fields.tags[0] === router.query.tag).map((post) =>
+    const postData = data.filter(post => post.fields.tags.includes(router.query.tag)).map((post) =>
         <article key={post.id} id={post.fields.slug}>
             <section className="container">
                 <section id="post-meta">
