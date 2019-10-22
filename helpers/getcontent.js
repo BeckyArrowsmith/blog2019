@@ -30,3 +30,11 @@ client.getEntries({
     if (error) throw error;
   });
 });
+
+client.getEntry("32Ua6DxhAO9eUmgLjKVHJ7").then(function(entry) {
+  let response = JSON.stringify(entry.fields);
+
+  fs.writeFile("./data/about-page.json", response, error => {
+    if (error) throw error;
+  });
+});
