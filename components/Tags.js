@@ -49,7 +49,7 @@ const Post = () => {
     );
     return (
         <div>
-            <h1>Showing articles with tag: {router.query.tag}</h1>
+            <h1 className="tag-page-headline container">Showing articles with tag: <span>{router.query.tag}</span></h1>
             {postData}
         </div>
     )
