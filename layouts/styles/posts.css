@@ -98,7 +98,3 @@ article hr {
     background: #FF00D6;
     background: linear-gradient(-45deg, #FF00D6 0%,#5a90e1 25%,#FF00D6 50%,#5a90e1 75%,#FF00D6 100%);
 }
-
-/* article hr:last-child {
-    display: none;
-} */
