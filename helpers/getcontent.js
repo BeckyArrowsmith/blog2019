@@ -32,7 +32,7 @@ client.getEntries({
 });
 
 client.getEntry("32Ua6DxhAO9eUmgLjKVHJ7").then(function(entry) {
-  let response = JSON.stringify(entry.fields);
+  let response = JSON.stringify(entry);
 
   fs.writeFile("./data/about-page.json", response, error => {
     if (error) throw error;
