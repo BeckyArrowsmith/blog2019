@@ -1,4 +1,4 @@
-import data from "../data/contentful-data.json";
+import data from "../data/contentful-posts.json";
 import Markdown from "markdown-to-jsx";
 
 import { useRouter } from 'next/router'
