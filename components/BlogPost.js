@@ -1,5 +1,8 @@
 import data from "../data/contentful-posts.json";
 import Markdown from 'markdown-to-jsx';
+import Prism from "prismjs";
+import marksy from "marksy";
+import { createElement } from "react";
 
 import { useRouter } from 'next/router'
 
@@ -9,6 +12,18 @@ const Post = () => {
     function dateFormat(date) {
         return new Date(date).toLocaleDateString();
     }
+
+    const compile = marksy({
+      createElement,
+      highlight(language, code) {
+        return Prism.highlight(
+          code,
+          Prism.languages.javascript,
+          Prism.languages.python,
+          language
+        );
+      }
+    });
 
     const postData = data.filter(post => post.fields.slug === router.query.slug).map((post) =>
         <article key={post.id} id={post.fields.slug}>

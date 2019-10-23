@@ -6,4 +6,5 @@
 @import "styles/posts.css";
 @import "styles/tags.css";
 @import "styles/footer.css";
-@import "styles/syntax.css";
+/* @import "styles/syntax.css"; */
+@import "styles/prism.css";
