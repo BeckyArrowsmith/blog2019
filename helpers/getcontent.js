@@ -21,16 +21,6 @@ client.getEntries({
   });
 });
 
-client.getEntries({
-    content_type: "page"
-  }).then(function(entries) {
-  let response = JSON.stringify(entries.items);
-
-  fs.writeFile("./data/contentful-pages.json", response, error => {
-    if (error) throw error;
-  });
-});
-
 client.getEntry("32Ua6DxhAO9eUmgLjKVHJ7").then(function(entry) {
   let response = JSON.stringify(entry);
 
