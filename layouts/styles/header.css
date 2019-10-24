@@ -12,10 +12,14 @@ header .container * {
 }
 
 header .bio h1, p {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 header .bio a {
     padding: 0;
-    color: #505050;
+    color: #464a4e;
+}
+
+header .bio a:hover {
+    color: #E00070;
 }
