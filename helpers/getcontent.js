@@ -1,5 +1,5 @@
 require("dotenv").config();
-const fs = require('fs');
+const fs = require("fs");
 
 const contentful = require("contentful");
 
@@ -11,10 +11,20 @@ const client = contentful.createClient({
   accessToken: ACCESS_TOKEN
 });
 
-client.getEntries().then(function(entries) {
+client.getEntries({
+    content_type: "blogPost"
+  }).then(function(entries) {
   let response = JSON.stringify(entries.items);
 
-  fs.writeFile("./data/contentful-data.json", response, error => {
+  fs.writeFile("./data/contentful-posts.json", response, error => {
+    if (error) throw error;
+  });
+});
+
+client.getEntry("32Ua6DxhAO9eUmgLjKVHJ7").then(function(entry) {
+  let response = JSON.stringify(entry);
+
+  fs.writeFile("./data/about-page.json", "[" + response + "]", error => {
     if (error) throw error;
   });
 });

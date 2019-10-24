@@ -1,8 +1,5 @@
 import data from "../data/contentful-posts.json";
-import Markdown from 'markdown-to-jsx';
-import Prism from "prismjs";
-import marksy from "marksy";
-import { createElement } from "react";
+import Markdown from "markdown-to-jsx";
 
 import { useRouter } from 'next/router'
 
@@ -10,28 +7,12 @@ const Post = () => {
     const router = useRouter()
 
     function dateFormat(date) {
-        return new Date(date).toLocaleDateString();
+      return new Date(date).toLocaleDateString();
     }
 
-    const compile = marksy({
-      createElement,
-      highlight(language, code) {
-        return Prism.highlight(
-          code,
-          Prism.languages.javascript,
-          Prism.languages.python,
-          language
-        );
-      }
-    });
-
-    const postData = data.filter(post => post.fields.slug === router.query.slug).map((post) =>
+    const postData = data.filter(post => post.fields.tags.includes(router.query.tag)).map((post) =>
         <article key={post.id} id={post.fields.slug}>
-            <section class="headline-image">
-                <img src={post.fields.headlineImage.fields.file.url} alt={post.fields.headlineImage.fields.description} />
-            </section>
-            
-            <section class="container">
+            <section className="container">
                 <section id="post-meta">
                     <span id="date-created">
                         <time><strong>{dateFormat(post.fields.datePublished)}</strong></time>
@@ -40,6 +21,7 @@ const Post = () => {
                     <section id="tags">
                         <ul>
                             <li><em>Tags:</em></li>
+                            
                             {post.fields.tags.map(tag => (
                             <li>
                                 <em><a href={"/tags?tag=" + tag}>{tag}</a></em>
@@ -48,15 +30,26 @@ const Post = () => {
                         </ul>
                     </section>
                 </section>
-                
-                <h1>{post.fields.title}</h1>
 
-                <Markdown className="post-content-markdown">{post.fields.content}</Markdown>
+                <h1>
+                    <a href={"/post?slug=" + post.fields.slug}>
+                        {post.fields.title}
+                    </a>
+                </h1>
+
+                <Markdown className="post-content-markdown">
+                    {post.fields.content.substring(0, 400) + "..."}
+                </Markdown>
+
+                <a id="read-more" href={"/post?slug=" + post.fields.slug}>Read more</a>
             </section>
+
+            <hr/>
         </article>
     );
     return (
         <div>
+            <h1 className="tag-page-headline container">Showing articles with tag: <span>{router.query.tag}</span></h1>
             {postData}
         </div>
     )
