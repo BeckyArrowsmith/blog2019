@@ -52,6 +52,10 @@ const Post = () => {
                 <h1>{post.fields.title}</h1>
 
                 <Markdown className="post-content-markdown">{post.fields.content}</Markdown>
+
+                <div id="commento"></div>
+                <script defer src="https://cdn.commento.io/js/commento.js">
+                </script>
             </section>
         </article>
     );
