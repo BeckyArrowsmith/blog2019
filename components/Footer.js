@@ -14,7 +14,7 @@ const Footer = () => (
                 <a>Repository</a>
             </Link>
 
-            <Link href="/pgp.txt">
+            <Link href="/pgp">
                 <a>PGP key</a>
             </Link>
 
