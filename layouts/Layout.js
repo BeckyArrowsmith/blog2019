@@ -10,7 +10,6 @@ const Layout = props => (
       <title>becky.codes</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
-      <script src="https://cdn.commento.io/js/commento.js"></script>
     </Head>
 
     <Header />
