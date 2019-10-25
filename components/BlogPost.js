@@ -27,10 +27,6 @@ const Post = () => {
 
     const postData = data.filter(post => post.fields.slug === router.query.slug).map((post) =>
         <article key={post.id} id={post.fields.slug}>
-            <section class="headline-image">
-                <img src={post.fields.headlineImage.fields.file.url} alt={post.fields.headlineImage.fields.description} />
-            </section>
-            
             <section class="container">
                 <section id="post-meta">
                     <span id="date-created">
