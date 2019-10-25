@@ -8,7 +8,7 @@ const AboutContent = () => {
 
     const content = data.map(page => (
         <article key={page.id} id={page.fields.slug}>
-            <section class="container">
+            <section className="container">
                 <h1>{page.fields.title}</h1>
 
                 <Markdown className="page-content-markdown">
