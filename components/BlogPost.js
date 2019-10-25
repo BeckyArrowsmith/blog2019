@@ -27,7 +27,7 @@ const Post = () => {
 
     const postData = data.filter(post => post.fields.slug === router.query.slug).map((post) =>
         <article key={post.id} id={post.fields.slug}>
-            <section class="container">
+            <section className="container">
                 <section id="post-meta">
                     <span id="date-created">
                         <time><strong>{dateFormat(post.fields.datePublished)}</strong></time>
