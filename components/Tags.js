@@ -11,21 +11,20 @@ const Post = () => {
     }
 
     const postData = data.filter(post => post.fields.tags.includes(router.query.tag)).map((post) =>
-        <article key={post.id} id={post.fields.slug}>
+        <article key={post.fields.slug} id={post.fields.slug}>
             <section className="container">
                 <section id="post-meta">
                     <span id="date-created">
                         <time><strong>{dateFormat(post.fields.datePublished)}</strong></time>
                     </span>
-
                     <section id="tags">
                         <ul>
-                            <li><em>Tags:</em></li>
-                            
+                            <li key="Tags"><em>Tags:</em></li>
+
                             {post.fields.tags.map(tag => (
-                            <li>
-                                <em><a href={"/tags?tag=" + tag}>{tag}</a></em>
-                            </li>
+                                <li key={tag}>
+                                    <em><a href={"/tags?tag=" + tag}>{tag}</a></em>
+                                </li>
                             ))}
                         </ul>
                     </section>
