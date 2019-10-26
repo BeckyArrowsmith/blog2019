@@ -7,7 +7,7 @@ const AboutContent = () => {
     }
 
     const content = data.map(page => (
-        <article key={page.id} id={page.fields.slug}>
+        <article key={page.fields.slug} id={page.fields.slug}>
             <section className="container">
                 <h1>{page.fields.title}</h1>
 
