@@ -30,6 +30,7 @@
         "dotenv": "^8.0.0",
         "enzyme": "^3.10.0",
         "enzyme-adapter-react-16": "^1.14.0",
-        "jest": "^24.8.0"
+        "jest": "^24.8.0",
+        "react-helmet": "^5.2.1"
     }
 }

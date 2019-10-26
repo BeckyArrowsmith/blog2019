@@ -2,6 +2,8 @@ import data from "../data/contentful-posts.json";
 import Markdown from 'markdown-to-jsx';
 import Prism from "prismjs";
 import marksy from "marksy";
+import Commento from "../components/Commento";
+
 import { createElement } from "react";
 
 import { useRouter } from 'next/router'
@@ -48,10 +50,8 @@ const Post = () => {
                 <h1>{post.fields.title}</h1>
 
                 <Markdown className="post-content-markdown">{post.fields.content}</Markdown>
-
-                <div id="commento"></div>
-                <script defer src="https://cdn.commento.io/js/commento.js">
-                </script>
+                
+                <Commento />
             </section>
         </article>
     );
