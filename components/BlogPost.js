@@ -7,6 +7,7 @@ import Commento from "../components/Commento";
 import { createElement } from "react";
 
 import { useRouter } from 'next/router'
+import TwitterCard from "./TwitterCard.js";
 
 const Post = () => {
     const router = useRouter()
@@ -29,6 +30,14 @@ const Post = () => {
 
     const postData = data.filter(post => post.fields.slug === router.query.slug).map((post) =>
         <article key={post.fields.slug} id={post.fields.slug}>
+            <TwitterCard 
+                url={post.fields.slug} 
+                summary={post.fields.twitterCardSummary} 
+                title={post.fields.title} 
+                description={post.fields.twitterCardSummary} 
+                image={post.fields.headlineImage.fields.file.url.replace('//', '')}
+            />
+
             <section className="container">
                 <section id="post-meta">
                     <span id="date-created">
