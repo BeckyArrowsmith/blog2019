@@ -1,36 +1,50 @@
 {
-    "scripts": {
-        "dev": "next",
-        "build": "next build",
-        "export": "next export",
-        "deploy": "npm run getcontent && npm run build && npm run export",
-        "start": "next start",
-        "test": "jest",
-        "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage",
-        "getcontent": "node helpers/getcontent.js"
-    },
-    "dependencies": {
-        "@zeit/next-css": "^1.0.1",
-        "babel-plugin-prismjs": "^1.1.1",
-        "contentful": "^7.8.2",
-        "markdown-to-jsx": "^6.10.3",
-        "marksy": "^8.0.0",
-        "next": "^9.0.0",
-        "prismjs": "^1.17.1",
-        "react": "^16.8.0",
-        "react-dom": "^16.8.0"
-    },
-    "devDependencies": {
-        "babel-core": "^6.26.3",
-        "babel-jest": "^24.8.0",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-react": "^6.24.1",
-        "chai": "^4.2.0",
-        "dotenv": "^8.0.0",
-        "enzyme": "^3.10.0",
-        "enzyme-adapter-react-16": "^1.14.0",
-        "jest": "^24.8.0",
-        "react-helmet": "^5.2.1"
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "deploy": "npm run getcontent && npm run build && npm run export",
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "getcontent": "node helpers/getcontent.js"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "babel-plugin-prismjs": "^1.1.1",
+    "contentful": "^7.8.2",
+    "markdown-to-jsx": "^6.10.3",
+    "marksy": "^8.0.0",
+    "next": "^9.0.0",
+    "prismjs": "^1.17.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.2.0",
+    "dotenv": "^8.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "husky": "^3.0.9",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "react-helmet": "^5.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }
