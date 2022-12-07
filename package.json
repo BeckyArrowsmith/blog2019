@@ -14,7 +14,7 @@
     "@zeit/next-css": "^1.0.1",
     "babel-plugin-prismjs": "^1.1.1",
     "contentful": "^7.8.2",
-    "markdown-to-jsx": "^6.10.3",
+    "markdown-to-jsx": "^6.11.4",
     "marksy": "^8.0.0",
     "next": "^9.0.0",
     "prismjs": "^1.17.1",
