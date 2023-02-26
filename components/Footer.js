@@ -11,10 +11,6 @@ const Footer = () => (
         <a href="https://www.linkedin.com/in/beckyarrowsmith/">LinkedIn</a>
       </Link>
 
-      <Link href="http://github.com/BeckyArrowsmith">
-        <a>GitHub</a>
-      </Link>
-
       <Link href="/about">
         <a>About</a>
       </Link>
